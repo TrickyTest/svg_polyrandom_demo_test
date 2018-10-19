@@ -42,7 +42,7 @@ class demo{
           polygonstring+=` ${v.x},${v.y}`;
       }
       let nv=this.vertexes[this.vertexes.length-1];
-      if (rand(1,50)===1) new vertex(nv.x,nv.y);
+      if (rand(1,50)===1) new vertex(nv.x,nv.y,this);
       polygonstring=polygonstring.trim();
       let poly="<"+`polygon points="${polygonstring}"  style="stroke:rgb(255,180,0);stroke-width:5;"`+">";
       let einde="</sgg>";
